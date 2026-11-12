@@ -1,123 +1,92 @@
 # Application Ranking
 ## Truck Trip Planner – Software Quality Assurance Assessment
 
-### 1. Purpose
+### 1. Purpose and Source
 
-This document provides the comparative ranking framework for the 20 Truck Trip Planner applications evaluated during the manual QA assessment.
-
-The ranking is based on the five equally weighted categories in the [Evaluation Scorecard](evaluation-scorecard.md). Each category is scored out of 5, giving a maximum of 25 points.
-
-**Important:** This document is a ranking template until the original assessment scores are entered and verified. No application is ranked or labelled as a winner in this version because the verified individual scores have not yet been added.
+This is the score-based ranking transcribed from the original **Truck Trip Planner QA Assessment** workbook, specifically the *Final Ranking* and *Master Assessment* sheets. Application identifiers are anonymised. The original category scores and ties are preserved.
 
 ### 2. Ranking Method
 
-Applications are ranked using the following method:
+Each application received five category scores, each out of 5: ELD Accuracy, Other Functional Requirements, UI Aesthetics, UX Intuitiveness, and Bugs & Functionality. The maximum total is 25.
 
-1. Use the final scores recorded in the Evaluation Scorecard.
-2. Confirm that all five categories have an evidence-supported score from 1 to 5.
-3. Add the five category scores to obtain a total out of 25.
-4. Convert the total to a percentage using:
+`Percentage = (Total Score ÷ 25) × 100`
 
-   `(Total Score ÷ 25) × 100`
+Applications are sorted by total score descending. Equal totals share the same rank. The original workbook included blocked and partially evaluated submissions in the ranking using its 1–5 minimum scoring convention. Their status is shown so readers do not mistake an inaccessible workflow for a fully tested product.
 
-5. Sort fully evaluated applications from the highest total score to the lowest.
-6. If two or more applications have the same total, report a tie unless a tie-break rule was part of the original assessment.
-7. Keep partially evaluated or blocked applications separate from the final ranked list and explain the limitation.
+### 3. Final Ranking Register
 
-The five scoring categories are:
-
-| Category | Maximum score |
-|---|---:|
-| ELD Accuracy | 5 |
-| Other Functional Requirements | 5 |
-| UI Aesthetics | 5 |
-| UX Intuitiveness | 5 |
-| Bugs and Functionality | 5 |
-| **Total** | **25** |
-
-### 3. Ranking Register
-
-Populate this register only after the scorecard has been completed and checked against the assessment records.
-
-| Rank | Application ID | ELD Accuracy | Other Functional | UI Aesthetics | UX Intuitiveness | Bugs & Functionality | Total /25 | Percentage | Evaluation status |
+| Rank | Application ID | ELD | Other Functional | UI | UX | Bugs | Total /25 | Percentage | Evaluation status |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|---|
-| Pending | Application 01 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 02 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 03 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 04 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 05 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 06 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 07 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 08 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 09 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 10 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 11 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 12 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 13 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 14 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 15 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 16 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 17 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 18 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 19 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Pending | Application 20 | — | — | — | — | — | Pending | Pending | Not recorded |
+| 1 | Application 15 | 4 | 4 | 4 | 4 | 3 | 19 | 76% | Complete |
+| 2 | Application 02 | 4 | 4 | 2 | 3 | 4 | 17 | 68% | Complete |
+| 2 | Application 16 | 4 | 3 | 4 | 4 | 2 | 17 | 68% | Complete |
+| 4 | Application 04 | 3 | 4 | 4 | 3 | 2 | 16 | 64% | Complete |
+| 5 | Application 01 | 3 | 3 | 3 | 3 | 3 | 15 | 60% | Complete |
+| 6 | Application 12 | 2 | 2 | 4 | 3 | 1 | 12 | 48% | Complete |
+| 6 | Application 18 | 1 | 3 | 4 | 3 | 1 | 12 | 48% | Complete |
+| 8 | Application 03 | 2 | 2 | 3 | 3 | 1 | 11 | 44% | Complete |
+| 9 | Application 11 | 1 | 1 | 4 | 2 | 1 | 9 | 36% | Blocked |
+| 9 | Application 19 | 1 | 1 | 4 | 2 | 1 | 9 | 36% | Blocked |
+| 11 | Application 14 | 1 | 1 | 4 | 1 | 1 | 8 | 32% | Blocked |
+| 12 | Application 05 | 1 | 2 | 2 | 1 | 1 | 7 | 28% | Complete |
+| 12 | Application 07 | 1 | 1 | 3 | 1 | 1 | 7 | 28% | Blocked |
+| 12 | Application 13 | 1 | 1 | 3 | 1 | 1 | 7 | 28% | Blocked |
+| 15 | Application 06 | 1 | 1 | 2 | 1 | 1 | 6 | 24% | Blocked |
+| 15 | Application 08 | 1 | 2 | 1 | 1 | 1 | 6 | 24% | Partially Evaluated |
+| 15 | Application 17 | 1 | 1 | 2 | 1 | 1 | 6 | 24% | Partially Evaluated |
+| 15 | Application 20 | 1 | 1 | 2 | 1 | 1 | 6 | 24% | Blocked |
+| 19 | Application 09 | 1 | 1 | 1 | 1 | 1 | 5 | 20% | Blocked |
+| 19 | Application 10 | 1 | 1 | 1 | 1 | 1 | 5 | 20% | Blocked |
 
-**Register note:** The application identifiers above are placeholders. Replace or map them to the same anonymised identifiers used in the original assessment records. Do not infer scores from memory or general impressions.
+### 4. Ranking Summary
 
-### 4. Evaluation Status
+| Measure | Result |
+|---|---:|
+| Applications in assessment | 20 |
+| Complete | 9 |
+| Partially Evaluated | 2 |
+| Blocked | 9 |
+| Highest score | 19/25 (76%) — Application 15 |
+| Lowest score | 5/25 (20%) — Applications 09 and 10 |
+| Mean score across all 20 historical scores | 10/25 (40%) |
+| Median score | 8.5/25 (34%) |
 
-| Status | Treatment in ranking |
-|---|---|
-| Complete | Eligible for the final ranked list once all five scores are verified. |
-| Partially Evaluated | Keep outside the fully evaluated ranking; identify which categories remain untested. |
-| Blocked | Do not assign a comparative rank unless the original assessment methodology explicitly provided a supported score for this situation. Explain the access or execution limitation. |
+The mean and median include all 20 historical scores, including blocked and partially evaluated submissions. They are descriptive statistics for the original score sheet, not a pass rate or a measure of quality among fully testable applications only.
 
-A feature that could not be accessed or tested must not automatically be recorded as a confirmed defect. Distinguish between an observed failure and an unverified area.
+### 5. Top Three Score Positions
 
-### 5. Ranking Summary
+- **Application 15 — 19/25 (76%):** Strongest observed submission: complete 24-hour logs, cycle recap reconciled with entered 20 hours and planned duty, HOS sequencing and multi-day trip worked, PDF export worked. Fuel stop about 45 miles late; ETA discrepancy about 30 minutes; final off-duty period not clearly shown.
+- **Application 02 — 17/25 (68%):** Broad functional coverage: four inputs, optional start time, stops/timings, breaks, fuel, pickup/drop-off, row totals and daily miles. Weak presentation; blank hours/remarks/header fields, unnamed stops, truncated text and nested scrolling.
+- **Application 16 — 17/25 (68%):** Correct route and complete 24-hour logs; driving limits, 30-minute breaks, 10-hour resets and cycle calculation verified. Generated dates were June 2025 rather than assessment date in November 2026; no fuel stop on a 1,786-mile trip despite 1,000-mile interval.
 
-Complete this summary after the register is populated.
+Applications 02 and 16 are tied for second place. The detailed strengths and limitations for all applications are recorded in the [Evaluation Scorecard](evaluation-scorecard.md).
 
-| Summary measure | Result |
-|---|---|
-| Total applications submitted | 20 |
-| Fully evaluated applications | Pending |
-| Partially evaluated applications | Pending |
-| Blocked applications | Pending |
-| Highest-scoring application | Pending |
-| Highest total score | Pending |
-| Lowest total score among fully evaluated applications | Pending |
-| Average score of fully evaluated applications | Pending |
-| Average percentage of fully evaluated applications | Pending |
+### 6. Cross-Submission Findings
 
-### 6. Comparative Findings
+The source workbook records recurring concerns across the submissions:
 
-Use this section to explain the results after the scores have been verified.
+- **ELD/HOS correctness:** incomplete 24-hour accounting, driving-limit and break violations, ignored cycle-hour inputs, and uncertainty around reset or duty-status handling.
+- **Trip-input integrity:** some generated schedules did not preserve the submitted locations or trip details.
+- **Route and stop planning:** incorrect geocoding, insufficient or late fuel stops, and mislabeled checkpoints.
+- **Integration and availability:** DNS, CORS/preflight, HTTP 500, geocoding HTTP 429/502, and authentication capacity issues blocked several workflows.
+- **Reporting and consistency:** PDF/on-screen discrepancies, changing mileage, and unclear final off-duty representation.
+- **Usability:** blank log fields, unnamed stops, truncated text, nested scrolling, and uneven visual hierarchy.
 
-#### Strongest-performing applications
-- [Record the application IDs and evidence supporting their performance.]
+These themes summarise the actual observations in the source workbook. They do not imply that every application exhibited every issue.
 
-#### Applications requiring the most improvement
-- [Record the application IDs and the principal observed quality gaps.]
+### 7. Evaluation Limitations and Fairness
 
-#### Common trends across submissions
-- [Summarise recurring patterns supported by the test records, such as ELD log completeness, HOS calculations, route accuracy, stop scheduling, interface usability, or application reliability.]
+Nine applications were marked Blocked because a deployment, authentication, API, DNS, geocoding, or backend issue prevented meaningful evaluation of the core workflow. Two were partially evaluated: one produced logs but left key HOS checks unresolved; another was a different type of driver-log product rather than the intended U.S. truck trip planner.
 
-#### Evaluation limitations
-- [Explain any deployment, authentication, API, or other access issues that limited testing.]
+The source workbook applied a minimum score of 1 in each category, even where core functionality could not be accessed. Those original scores are retained for historical accuracy, but blocked results must not be read as proof of defects in unobserved ELD calculations or logs. The status column provides the necessary context.
 
-### 7. Evidence and Traceability
+### 8. Traceability
 
-For every final score and ranking decision, retain traceability to:
-- The relevant application evaluation notes in [evaluation-scorecard.md](evaluation-scorecard.md).
-- The applicable functional test case in [functional-test-cases.md](../test-cases/functional-test-cases.md).
-- A defect record in [bug-reports.md](../bug-reports/bug-reports.md), where a defect was confirmed.
-- Permitted screenshots or other assessment evidence, where available.
+- [Evaluation Scorecard](evaluation-scorecard.md) — full score register and application-level observations.
+- [Functional Test Cases](../test-cases/functional-test-cases.md) — test definitions and expected results.
+- [Bug Reports](../bug-reports/bug-reports.md) — defect-reporting process and confirmed issue register.
+- [Final QA Report](../final-report/final-qa-report.md) — consolidated assessment conclusions.
 
-Do not publish private candidate information, confidential submission links, or assessment materials that are not authorised for public disclosure.
+### 9. Conclusion
 
-### 8. Conclusion
-
-This ranking framework is designed to present the comparative results of the 20 Truck Trip Planner applications transparently and consistently. The final ranking will be completed only when the original assessment scores have been transferred, checked, and linked to supporting observations.
-
-Until then, all ranks and aggregate results remain pending.
+Application 15 achieved the highest recorded score at 19/25 (76%). Applications 02 and 16 tied for second at 17/25 (68%). The ranking reflects the original assessment workbook and should be interpreted alongside the completion status and limitations recorded for each submission.
