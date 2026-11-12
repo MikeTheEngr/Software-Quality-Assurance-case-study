@@ -222,7 +222,7 @@ The final comparative conclusions will be completed after the original applicati
 - [Bug Reports](../bug-reports/bug-reports.md)
 - [Evaluation Scorecard](../test-results/evaluation-scorecard.md)
 - [Application Ranking](../test-results/application-ranking.md)
-- [Quality Improvement Recommendations](../recommendations/quality-improvement.md) — to be added
+- [Quality Improvement Recommendations](../recommendations/quality-improvement.md)
 
 ---
 
