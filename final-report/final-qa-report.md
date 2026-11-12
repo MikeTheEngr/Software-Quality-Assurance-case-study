@@ -3,7 +3,7 @@
 
 **Assessment coverage:** 20 independently developed applications  
 **Testing approach:** Manual testing  
-**Report status:** Results framework prepared; quantitative results pending verification  
+**Report status:** Quantitative score sheet and ranking transcribed from the original assessment workbook  
 **Assessment scenario:** Dallas, Texas → Houston, Texas → Los Angeles, California  
 **Initial cycle hours:** 20 hours
 
@@ -160,21 +160,23 @@ See [Bug Reports](../bug-reports/bug-reports.md).
 
 ## 7. Quantitative Results and Application Comparison
 
-The final quantitative results must be populated from the original assessment records.
+The original assessment workbook records scores for all 20 submissions. The category scores, totals, percentages, and application-level observations have been transcribed into the [Evaluation Scorecard](../test-results/evaluation-scorecard.md), and the original score-based order is published in the [Application Ranking](../test-results/application-ranking.md).
 
 | Measure | Result |
-|---|---|
-| Applications in assessment scope | 20 |
-| Applications with verified complete scores | Pending |
-| Applications partially evaluated | Pending |
-| Applications blocked from meaningful evaluation | Pending |
-| Highest verified total score | Pending |
-| Average verified score | Pending |
-| Final ranking | Pending |
+|---|---:|
+| Applications assessed | 20 |
+| Complete | 9 |
+| Partially Evaluated | 2 |
+| Blocked | 9 |
+| Highest recorded score | 19/25 (76%) — Application 15 |
+| Second place | 17/25 (68%) — Applications 02 and 16 (tie) |
+| Lowest recorded score | 5/25 (20%) — Applications 09 and 10 |
+| Mean score across all 20 historical scores | 10/25 (40%) |
+| Median score | 8.5/25 (34%) |
 
-The detailed scoring register is maintained in [Evaluation Scorecard](../test-results/evaluation-scorecard.md), and the comparative ranking framework is maintained in [Application Ranking](../test-results/application-ranking.md).
+The mean and median include all 20 source-workbook scores, including blocked and partially evaluated submissions. They should not be interpreted as a pass rate or as statistics for fully tested applications only.
 
-No final ranking, average, pass rate, or comparative winner should be published until the source scores have been checked for completeness and accuracy.
+**Scoring limitation:** The original workbook applied a minimum score of 1 in each category, including when a core workflow was blocked. These scores are preserved for historical accuracy. For blocked submissions, the low ELD/functional scores do not prove that inaccessible calculations or logs were defective. Refer to the status and observation notes in the scorecard.
 
 ## 8. Recommendations
 
@@ -212,7 +214,7 @@ This assessment established a structured manual QA approach for reviewing 20 Tru
 
 The documented findings highlight important areas for improvement, particularly calculation accuracy, log completeness, data consistency, route and stop planning, integration reliability, export consistency, and error handling.
 
-The final comparative conclusions will be completed after the original application scores, defect records, and supporting evidence have been transferred and verified. Maintaining this evidence-based approach ensures that the portfolio communicates the assessment accurately without overstating what was tested or observed.
+The original score sheet and ranking have now been transferred into the repository. Application-level findings are included in the scorecard. The functional test-case execution matrix and individual defect records remain separate evidence tasks because the workbook does not provide a pass/fail result for every test case or a fully reproduced bug ticket for every observation.
 
 ## 11. Related QA Documentation
 
@@ -226,4 +228,4 @@ The final comparative conclusions will be completed after the original applicati
 
 ---
 
-**Report integrity note:** This report intentionally leaves quantitative results pending where verified source scores are not yet recorded in the repository. Update the report only when the underlying assessment evidence is available and checked.
+**Report integrity note:** Quantitative results in this report are transcribed from the original assessment workbook. Blocked and partially evaluated submissions are labelled explicitly; no unobserved behaviour is presented as a confirmed defect.
