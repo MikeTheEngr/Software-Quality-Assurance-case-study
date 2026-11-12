@@ -154,98 +154,198 @@ Example only: a hypothetical application scoring 4, 4, 3, 5, and 4 receives 20/2
 
 Do not use this example as an actual assessment result.
 
-### 6. Evaluation Register – 20 Applications
+### 6. Recorded Evaluation Results — 20 Applications
 
-Enter the actual application identifier used in the assessment. Keep candidate names and confidential submission details out of this public case study.
+The following scores have been transcribed from the original **Truck Trip Planner QA Assessment** workbook (Master Assessment and Individual QA Analysis sheets). Application identifiers are anonymised to preserve candidate privacy. The category order is ELD Accuracy, Other Functional Requirements, UI Aesthetics, UX Intuitiveness, and Bugs & Functionality.
 
-| Application ID | ELD Accuracy /5 | Other Functional /5 | UI Aesthetics /5 | UX Intuitiveness /5 | Bugs & Functionality /5 | Total /25 | Percentage | Evaluation status |
+| Application ID | ELD /5 | Other Functional /5 | UI /5 | UX /5 | Bugs /5 | Total /25 | Percentage | Evaluation status |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Application 01 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 02 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 03 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 04 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 05 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 06 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 07 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 08 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 09 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 10 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 11 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 12 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 13 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 14 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 15 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 16 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 17 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 18 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 19 | — | — | — | — | — | Pending | Pending | Not recorded |
-| Application 20 | — | — | — | — | — | Pending | Pending | Not recorded |
+| Application 01 | 3 | 3 | 3 | 3 | 3 | 15 | 60% | Complete |
+| Application 02 | 4 | 4 | 2 | 3 | 4 | 17 | 68% | Complete |
+| Application 03 | 2 | 2 | 3 | 3 | 1 | 11 | 44% | Complete |
+| Application 04 | 3 | 4 | 4 | 3 | 2 | 16 | 64% | Complete |
+| Application 05 | 1 | 2 | 2 | 1 | 1 | 7 | 28% | Complete |
+| Application 06 | 1 | 1 | 2 | 1 | 1 | 6 | 24% | Blocked |
+| Application 07 | 1 | 1 | 3 | 1 | 1 | 7 | 28% | Blocked |
+| Application 08 | 1 | 2 | 1 | 1 | 1 | 6 | 24% | Partially Evaluated |
+| Application 09 | 1 | 1 | 1 | 1 | 1 | 5 | 20% | Blocked |
+| Application 10 | 1 | 1 | 1 | 1 | 1 | 5 | 20% | Blocked |
+| Application 11 | 1 | 1 | 4 | 2 | 1 | 9 | 36% | Blocked |
+| Application 12 | 2 | 2 | 4 | 3 | 1 | 12 | 48% | Complete |
+| Application 13 | 1 | 1 | 3 | 1 | 1 | 7 | 28% | Blocked |
+| Application 14 | 1 | 1 | 4 | 1 | 1 | 8 | 32% | Blocked |
+| Application 15 | 4 | 4 | 4 | 4 | 3 | 19 | 76% | Complete |
+| Application 16 | 4 | 3 | 4 | 4 | 2 | 17 | 68% | Complete |
+| Application 17 | 1 | 1 | 2 | 1 | 1 | 6 | 24% | Partially Evaluated |
+| Application 18 | 1 | 3 | 4 | 3 | 1 | 12 | 48% | Complete |
+| Application 19 | 1 | 1 | 4 | 2 | 1 | 9 | 36% | Blocked |
+| Application 20 | 1 | 1 | 2 | 1 | 1 | 6 | 24% | Blocked |
 
-**Register instructions**
-1. Replace each dash with a score from 1 to 5 only when evidence supports that score.
-2. If a category was not assessed, enter **NT** and keep the total and percentage as **Pending**.
-3. Calculate the total only when all five category scores are available.
-4. Calculate the percentage using the formula above.
-5. Set evaluation status to **Complete**, **Partially Evaluated**, or **Blocked**, as appropriate.
-6. Keep supporting observations and defect references in the notes section below or in the linked defect report.
+**Important scoring-method clarification:** The original assessment workbook assigned a minimum score of 1 in each category when the 1–5 rubric was applied, including cases where access or a backend/API problem prevented the core workflow from being exercised. Those historical scores are preserved exactly rather than silently changed to NT. For applications marked **Blocked**, the low functional/ELD scores must not be interpreted as proof that inaccessible calculations or logs were defective. The recorded observation explains what was and was not verifiable. The UI score, where separately assessed, reflects only the visible interface.
+
+**Status summary:** 9 Complete; 2 Partially Evaluated; 9 Blocked. All 20 rows have historical numeric scores in the source workbook, but not all 20 applications had a fully testable core workflow.
 
 ### 7. Application Evaluation Notes
 
-Duplicate this section for each application as the assessment records are completed.
+#### Application 01
 
-#### Application [ID]
+- **Scores:** ELD 3/5; Other Functional 3/5; UI 3/5; UX 3/5; Bugs & Functionality 3/5.
+- **Total:** 15/25 (60%).
+- **Evaluation status:** Complete.
+- **Recorded assessment observations:** Functional foundation; required inputs and basic ELD logs/map present. Missing rest breaks, fuel stops and pickup/drop-off activities; difficult map use; weak validation and guidance.
 
-| Field | Record |
-|---|---|
-| Application ID | Application [ID] |
-| Date evaluated | [Enter date, if available] |
-| Evaluation status | [Complete / Partially Evaluated / Blocked] |
-| ELD Accuracy | [Score 1–5 or NT] |
-| Other Functional Requirements | [Score 1–5 or NT] |
-| UI Aesthetics | [Score 1–5 or NT] |
-| UX Intuitiveness | [Score 1–5 or NT] |
-| Bugs and Functionality | [Score 1–5 or NT] |
-| Total score | [Pending until all five scores are available] |
-| Percentage | [Pending until all five scores are available] |
+#### Application 02
 
-**Observed strengths**
-- [Record evidence-based observations.]
+- **Scores:** ELD 4/5; Other Functional 4/5; UI 2/5; UX 3/5; Bugs & Functionality 4/5.
+- **Total:** 17/25 (68%).
+- **Evaluation status:** Complete.
+- **Recorded assessment observations:** Broad functional coverage: four inputs, optional start time, stops/timings, breaks, fuel, pickup/drop-off, row totals and daily miles. Weak presentation; blank hours/remarks/header fields, unnamed stops, truncated text and nested scrolling.
 
-**Observed weaknesses**
-- [Record evidence-based observations.]
+#### Application 03
 
-**Defect references**
-- [Add defect IDs from the defect register, or write “None recorded” if no defects were observed.]
+- **Scores:** ELD 2/5; Other Functional 2/5; UI 3/5; UX 3/5; Bugs & Functionality 1/5.
+- **Total:** 11/25 (44%).
+- **Evaluation status:** Complete.
+- **Recorded assessment observations:** Generated schedule appeared HOS-compliant but did not correspond to submitted trip. Inputs not reflected; no stop markers, stops list or start date.
 
-**Testing limitations / unverified areas**
-- [Record any inaccessible or untested functionality.]
+#### Application 04
 
-**Evidence reference**
-- [Add a non-confidential screenshot, test record, or other permitted evidence reference.]
+- **Scores:** ELD 3/5; Other Functional 4/5; UI 4/5; UX 3/5; Bugs & Functionality 2/5.
+- **Total:** 16/25 (64%).
+- **Evaluation status:** Complete.
+- **Recorded assessment observations:** Professional paper-style 24-hour logs, route continuity, stop events and PDF export. Selected 20-hour cycle not reflected in recap/availability; mileage varied between comparable runs; generation took about 30 seconds.
+
+#### Application 05
+
+- **Scores:** ELD 1/5; Other Functional 2/5; UI 2/5; UX 1/5; Bugs & Functionality 1/5.
+- **Total:** 7/25 (28%).
+- **Evaluation status:** Complete.
+- **Recorded assessment observations:** Critical ELD concerns: incomplete 24-hour accounting, driving-limit and break violations, ignored cycle input, incomplete trip, PDF/on-screen inconsistency, impossible recap values and manual coordinates.
+
+#### Application 06
+
+- **Scores:** ELD 1/5; Other Functional 1/5; UI 2/5; UX 1/5; Bugs & Functionality 1/5.
+- **Total:** 6/25 (24%).
+- **Evaluation status:** Blocked.
+- **Recorded assessment observations:** Backend API hostname DNS failure. U.S. locations could not be used; primary action and login/register controls did not work; no route, map, stops or ELD output. Core workflow unverified.
+
+#### Application 07
+
+- **Scores:** ELD 1/5; Other Functional 1/5; UI 3/5; UX 1/5; Bugs & Functionality 1/5.
+- **Total:** 7/25 (28%).
+- **Evaluation status:** Blocked.
+- **Recorded assessment observations:** Backend reachable, but deployed frontend requests blocked by CORS/preflight failure. No route, map, itinerary or ELD logs. UI received a separate visual score; core workflow unverified.
+
+#### Application 08
+
+- **Scores:** ELD 1/5; Other Functional 2/5; UI 1/5; UX 1/5; Bugs & Functionality 1/5.
+- **Total:** 6/25 (24%).
+- **Evaluation status:** Partially Evaluated.
+- **Recorded assessment observations:** Initially geocoding returned HTTP 429 and trip API HTTP 500; logs generated after cache clear. Days 1 and 2 accounted for only 23 and 22 hours; break/reset/14-hour compliance and recap could not be verified; sleeper-berth status unclear.
+
+#### Application 09
+
+- **Scores:** ELD 1/5; Other Functional 1/5; UI 1/5; UX 1/5; Bugs & Functionality 1/5.
+- **Total:** 5/25 (20%).
+- **Evaluation status:** Blocked.
+- **Recorded assessment observations:** Registration blocked because Clerk development instance reached its 100-user limit. Planner inaccessible; score reflects inability to evaluate deployed product, not proven ELD defects.
+
+#### Application 10
+
+- **Scores:** ELD 1/5; Other Functional 1/5; UI 1/5; UX 1/5; Bugs & Functionality 1/5.
+- **Total:** 5/25 (20%).
+- **Evaluation status:** Blocked.
+- **Recorded assessment observations:** Trip-planning submission returned HTTP 500. No route, map, stops or ELD logs generated. Server-side root cause not established; UI score provisional.
+
+#### Application 11
+
+- **Scores:** ELD 1/5; Other Functional 1/5; UI 4/5; UX 2/5; Bugs & Functionality 1/5.
+- **Total:** 9/25 (36%).
+- **Evaluation status:** Blocked.
+- **Recorded assessment observations:** Professional interface and accessible form, but planning failed because backend could not resolve PostgreSQL hostname. No route/map/stops/logs; raw internal database error exposed.
+
+#### Application 12
+
+- **Scores:** ELD 2/5; Other Functional 2/5; UI 4/5; UX 3/5; Bugs & Functionality 1/5.
+- **Total:** 12/25 (48%).
+- **Evaluation status:** Complete.
+- **Recorded assessment observations:** Complete 24-hour logs and attractive map/log presentation, but pickup resolved to Huston-Tillotson University in Austin instead of Houston; 20 prior cycle hours ignored in recap; 30-minute breaks missing after 8 hours on Days 1 and 2; fuel stop late.
+
+#### Application 13
+
+- **Scores:** ELD 1/5; Other Functional 1/5; UI 3/5; UX 1/5; Bugs & Functionality 1/5.
+- **Total:** 7/25 (28%).
+- **Evaluation status:** Blocked.
+- **Recorded assessment observations:** Signup blocked by CORS preflight failure between deployed frontend and backend. No planner or ELD outputs accessible; login was not confirmed tested.
+
+#### Application 14
+
+- **Scores:** ELD 1/5; Other Functional 1/5; UI 4/5; UX 1/5; Bugs & Functionality 1/5.
+- **Total:** 8/25 (32%).
+- **Evaluation status:** Blocked.
+- **Recorded assessment observations:** Strong visual appearance, but trip-planning API returned HTTP 500. No route, map, stops or ELD logs. Exact server-side cause unknown without backend logs.
+
+#### Application 15
+
+- **Scores:** ELD 4/5; Other Functional 4/5; UI 4/5; UX 4/5; Bugs & Functionality 3/5.
+- **Total:** 19/25 (76%).
+- **Evaluation status:** Complete.
+- **Recorded assessment observations:** Strongest observed submission: complete 24-hour logs, cycle recap reconciled with entered 20 hours and planned duty, HOS sequencing and multi-day trip worked, PDF export worked. Fuel stop about 45 miles late; ETA discrepancy about 30 minutes; final off-duty period not clearly shown.
+
+#### Application 16
+
+- **Scores:** ELD 4/5; Other Functional 3/5; UI 4/5; UX 4/5; Bugs & Functionality 2/5.
+- **Total:** 17/25 (68%).
+- **Evaluation status:** Complete.
+- **Recorded assessment observations:** Correct route and complete 24-hour logs; driving limits, 30-minute breaks, 10-hour resets and cycle calculation verified. Generated dates were June 2025 rather than assessment date in November 2026; no fuel stop on a 1,786-mile trip despite 1,000-mile interval.
+
+#### Application 17
+
+- **Scores:** ELD 1/5; Other Functional 1/5; UI 2/5; UX 1/5; Bugs & Functionality 1/5.
+- **Total:** 6/25 (24%).
+- **Evaluation status:** Partially Evaluated.
+- **Recorded assessment observations:** European manual driver-log application rather than a U.S. ELD trip planner. No FMCSA HOS logs, U.S. route planning, map, stops, fuel or multi-day itinerary; Russian-language interface and weak validation.
+
+#### Application 18
+
+- **Scores:** ELD 1/5; Other Functional 3/5; UI 4/5; UX 3/5; Bugs & Functionality 1/5.
+- **Total:** 12/25 (48%).
+- **Evaluation status:** Complete.
+- **Recorded assessment observations:** Strong interface, route/map interaction and dated three-day itinerary, but Day 2 driving 12.8 hours and Day 3 11.6 hours exceeded 11-hour limit. Entered 20 cycle hours appeared ignored; fuel stops insufficient; some checkpoints mislabeled.
+
+#### Application 19
+
+- **Scores:** ELD 1/5; Other Functional 1/5; UI 4/5; UX 2/5; Bugs & Functionality 1/5.
+- **Total:** 9/25 (36%).
+- **Evaluation status:** Blocked.
+- **Recorded assessment observations:** Clean professional form with required inputs and explicit 70-hour/8-day prior-cycle wording plus rest strategy. Geocoding returned HTTP 502 for Dallas; no route, map, stops or ELD logs. Core workflow unverified.
+
+#### Application 20
+
+- **Scores:** ELD 1/5; Other Functional 1/5; UI 2/5; UX 1/5; Bugs & Functionality 1/5.
+- **Total:** 6/25 (24%).
+- **Evaluation status:** Blocked.
+- **Recorded assessment observations:** Frontend loaded, but backend /api/trips/ request blocked by CORS: missing Access-Control-Allow-Origin and failed OPTIONS preflight. No trip, route, map, stops or ELD logs; core workflow unverified.
+
 
 ### 8. Evaluation Status Definitions
 
 | Status | Meaning |
 |---|---|
-| Complete | All five categories were evaluated and scored. |
-| Partially Evaluated | Some categories were evaluated, but one or more remain untested. |
-| Blocked | Access or a blocking issue prevented meaningful evaluation of the application. |
+| Complete | The application workflow was sufficiently accessible to assess the main criteria and record the category scores. |
+| Partially Evaluated | Some functionality was exercised, but important criteria remained unverified or the submission did not match the intended product scope. |
+| Blocked | An access, deployment, authentication, API, or backend issue prevented meaningful evaluation of the core workflow. |
 
-A blocked or partially evaluated application must not be presented as though all functionality was tested. Explain what could and could not be verified.
+The status is separate from the historical numeric score. A blocked application's score does not prove that inaccessible functionality was tested.
 
 ### 9. Ranking Preparation
 
-Once the evaluation register contains complete, evidence-supported scores:
-- Rank applications by total score, from highest to lowest.
-- Use percentage as the equivalent normalised score.
-- If applications have equal totals, report a tie unless a separately documented tie-break rule is agreed.
-- Do not rank incomplete evaluations alongside fully evaluated applications without clearly labelling the limitation.
-- Keep the application identifiers consistent with the later application-ranking document.
+The original workbook ranks all 20 submissions by total score, including blocked or partially evaluated submissions. The published ranking retains that original score-based order for transparency, while clearly labelling evaluation limitations. Tied totals share the same rank.
 
 ### 10. Assessment Limitations
 
-Scores represent observed behaviour in the assessment environment and are not a source-code audit, security assessment, or formal regulatory certification. UI and UX scores are evaluative judgements and should be supported by concise observations. ELD/HOS scores reflect the criteria in the test plan.
+Scores represent the tester's reported hands-on observations and console/network observations recorded in the source workbook. They are not a source-code audit, security assessment, or formal regulatory certification. UI and UX scores involve evaluative judgement. Blocked applications have limited functional evidence, and their results should be interpreted accordingly.
 
 ### 11. Conclusion
 
-This scorecard establishes a repeatable, equally weighted framework for comparing the 20 Truck Trip Planner applications. It supports transparent scoring, evidence-based findings, and consistent preparation of the final application ranking and QA report.
+The original 20-application score sheet has now been transcribed into this repository. The results preserve the recorded category scores, totals, percentages, and application-level observations while distinguishing completed, partially evaluated, and blocked workflows.
