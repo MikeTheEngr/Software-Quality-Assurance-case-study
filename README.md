@@ -103,6 +103,7 @@ The project documentation is organised into:
 | [QA Test Plan](test-plan/test-plan.md) | Defines the assessment scope, scenario, approach, and evaluation criteria. |
 | [Functional Test Cases](test-cases/functional-test-cases.md) | Provides repeatable test steps and expected results for the core workflows. |
 | [Bug Reports](bug-reports/bug-reports.md) | Provides the defect-reporting template and observation register. |
+| [Test Execution Dashboard](test-results/test-execution-dashboard.md) | Summarises evaluation status, top scores, key findings, and test coverage. |
 | [Evaluation Scorecard](test-results/evaluation-scorecard.md) | Defines the five-category rubric and contains the 20 recorded scores and application observations. |
 | [Application Ranking](test-results/application-ranking.md) | Presents the original score-based ranking, ties, summary statistics, and limitations. |
 | [Final QA Report](final-report/final-qa-report.md) | Consolidates the assessment approach, quantitative results, findings, and limitations. |
