@@ -7,7 +7,7 @@ This project documents a manual Quality Assurance (QA) evaluation of 20 independ
 
 The objective was to assess application functionality, Electronic Logging Device (ELD) accuracy, user interface design, user experience, and overall software reliability against defined requirements.
 
-The evaluation involved hands-on application testing, identifying functional inconsistencies, documenting defects, assigning quality scores, and providing actionable recommendations.
+The assessment involved hands-on application evaluation, review of functional behaviour and ELD/HOS outputs, documentation of observed quality concerns, and preparation of a standardised scoring and reporting framework. The original per-application scores and detailed evidence have not yet been transferred into this public portfolio.
 
 ### Project Objectives
 
@@ -16,7 +16,7 @@ The evaluation involved hands-on application testing, identifying functional inc
 - Verify route planning, stops, rest periods and fuel scheduling.
 - Evaluate interface design and user experience.
 - Identify functional defects, inconsistencies and usability issues.
-- Score and rank applications using a standardised evaluation framework.
+- Establish a standardised framework for scoring and ranking applications; publish comparative results only after the original scores are verified.
 - Provide recommendations for improving software quality.
 
 ### Testing Scope
@@ -58,7 +58,7 @@ Each category contributed equally to the final score.
 
 **Percentage calculation:** (Total Score ÷ 25) × 100.
 
-Applications that could not be accessed or whose core functionality was blocked were documented accordingly. In such cases, inaccessible functionality was classified as unverified rather than assumed to be defective.
+Applications that could not be accessed or whose core functionality was blocked were to be documented accordingly. In such cases, inaccessible functionality is classified as unverified rather than assumed to be defective. The repository currently contains the scoring and ranking templates; verified individual scores and final rankings remain pending.
 
 ### Key QA Activities
 
@@ -95,6 +95,20 @@ The project documentation is organised into:
 - QA evaluation scorecard.
 - Comparative assessment results.
 - Quality improvement recommendations.
+
+### Documentation Guide
+
+| Document | Purpose |
+|---|---|
+| [QA Test Plan](test-plan/test-plan.md) | Defines the assessment scope, scenario, approach, and evaluation criteria. |
+| [Functional Test Cases](test-cases/functional-test-cases.md) | Provides repeatable test steps and expected results for the core workflows. |
+| [Bug Reports](bug-reports/bug-reports.md) | Provides the defect-reporting template and observation register. |
+| [Evaluation Scorecard](test-results/evaluation-scorecard.md) | Defines the five-category scoring rubric and per-application score register. |
+| [Application Ranking](test-results/application-ranking.md) | Provides the methodology and register for verified comparative results. |
+| [Final QA Report](final-report/final-qa-report.md) | Consolidates the assessment approach, findings, limitations, and pending quantitative results. |
+| [Quality Improvement Recommendations](recommendations/quality-improvement.md) | Outlines engineering improvements linked to the assessment themes. |
+
+**Portfolio status:** The documentation framework is published. The original score sheet and application-level evidence still need to be entered and verified before final scores, averages, or rankings can be reported.
 
 ### Skills Demonstrated
 
