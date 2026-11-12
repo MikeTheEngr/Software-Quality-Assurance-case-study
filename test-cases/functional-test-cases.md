@@ -177,7 +177,80 @@ Use one execution record per application. Duplicate the template for Application
 **Browser / environment:** To be recorded  
 **Tester notes:** To be recorded
 
-## 6. Evidence and Reporting Guidelines
+
+## 6. Retrospective Execution Summary — Original Assessment Evidence
+
+The original assessment workbook contains application-level observations and scoring justifications. It does **not** contain a complete ten-test-case-by-twenty-application execution matrix, nor does it preserve a pass/fail result for every individual test. The table below therefore records only outcomes explicitly supported by the workbook. It is a retrospective evidence summary, not a claim that every test case was separately executed.
+
+### 6.1 Application-level execution evidence
+
+| Application | Access / execution outcome | Test cases with recorded evidence | Retrospective result summary |
+|---|---|---|---|
+| 01 — Fless Lab | Core workflow accessible | TC-003, TC-005, TC-007, TC-008, TC-004 | Basic logs and map were present. Rest breaks, fuel stops, and pickup/drop-off activities were recorded as missing. |
+| 02 — Taha Meskini | Core workflow accessible | TC-002, TC-004, TC-005, TC-007, TC-008 | Broad trip and stop functionality was observed. Log fields, stop labels, and presentation issues were recorded. |
+| 03 — okaycodes (identity unverified) | Schedule generated | TC-002, TC-003, TC-004, TC-005, TC-006 | Generated schedule did not reflect submitted trip inputs; stop markers/list and start date were absent. |
+| 04 — Hannah Mariel Tamayo | Core workflow accessible | TC-003, TC-005, TC-006, TC-009 | Route continuity, daily logs, stop events, and PDF export were observed. Cycle recap did not reflect entered 20 hours; mileage varied between comparable runs. |
+| 05 — Derek | Core workflow accessible; major output concerns | TC-005, TC-006, TC-007, TC-009, TC-003 | Incomplete daily accounting, HOS/break violations, ignored cycle input, incomplete trip, and PDF/on-screen inconsistencies were recorded. |
+| 06 — TruckTrack | Blocked by backend DNS failure | TC-001, TC-002 | U.S. locations and core planning workflow could not be used; route, map, stops, and ELD outputs unavailable. |
+| 07 — RouteRest | Blocked by CORS/preflight failure | TC-001, TC-002 | Frontend/backend integration prevented route, itinerary, and ELD output generation. |
+| 08 — Fedhako7 | Partially accessible after cache clear | TC-001, TC-005, TC-006 | Logs were generated after initial HTTP 429/500 errors. Day 1 and Day 2 accounted for 23 and 22 hours; other HOS checks remained unverified. |
+| 09 — Outbound Spotter | Blocked at registration | TC-001 | Registration could not proceed because the Clerk development instance had reached its user limit. Core workflow not tested. |
+| 10 — FantaJinMode | Blocked by HTTP 500 during trip submission | TC-001, TC-002 | No route, map, stops, or ELD logs were generated. |
+| 11 — Najma099 | Blocked by database-hostname resolution failure | TC-001, TC-002 | Form/interface was accessible, but planning failed; no route, map, stops, or logs were generated. |
+| 12 — Jerome Balagtas | Core workflow accessible | TC-003, TC-004, TC-005, TC-006, TC-007, TC-008 | Complete 24-hour logs and map were observed. Pickup resolved to Austin instead of Houston; cycle input was ignored; breaks were missing on Days 1 and 2; fuel stop was late. |
+| 13 — Royweru | Blocked at signup by CORS failure | TC-001 | Planner and ELD outputs could not be accessed. Login was not confirmed tested. |
+| 14 — Schneider One | Blocked by trip-planning API HTTP 500 | TC-001, TC-002 | No route, map, stops, or ELD logs were generated. |
+| 15 — Boredoom17 | Core workflow accessible | TC-003, TC-005, TC-006, TC-007, TC-008, TC-009 | Complete daily logs, cycle recap, HOS sequencing, multi-day trip, and PDF export were observed. Fuel stop was approximately 45 miles late; ETA differed by about 30 minutes; final off-duty period was unclear. |
+| 16 — esa-yas | Core workflow accessible | TC-003, TC-005, TC-006, TC-007, TC-008 | Route and complete logs were observed; driving limits, breaks, resets, and cycle calculation were recorded as verified. Generated dates were stale and fuel stop was missing on a 1,786-mile trip. |
+| 17 — Truck Driver Log | Accessible, but product scope mismatch | TC-001 (scope review) | European manual driver-log application rather than the intended U.S. truck trip planner. U.S. route and ELD test cases were not applicable / not executed. |
+| 18 — Truck Trip Planner Engine | Core workflow accessible | TC-003, TC-004, TC-005, TC-006, TC-008 | Route/map and three-day itinerary were observed. Driving exceeded 11 hours on Days 2 and 3; cycle input appeared ignored; fuel stops were insufficient; checkpoints were mislabeled. |
+| 19 — ELD Trip Planner | Blocked by Dallas geocoding HTTP 502 | TC-001, TC-002 | Form was accessible, but route, map, stops, and ELD logs were not generated. |
+| 20 — Spotter FullStack Assignment | Blocked by CORS/preflight failure | TC-001, TC-002 | Frontend loaded, but trip API request failed; no trip, route, map, stops, or ELD logs were generated. |
+
+### 6.2 Test-case outcome interpretation
+
+| Test case | What the source workbook supports | Retrospective interpretation |
+|---|---|---|
+| TC-001 Accessibility | Multiple explicit access, signup, DNS, API, and CORS blockers; some applications' workflows were accessible. | Record as accessible, blocked, or scope-mismatched only where the application notes support it. |
+| TC-002 Input validation | Input reflection/cycle-input issues and blocked submissions are noted; systematic invalid/empty-field testing is not recorded. | Partial evidence only; do not claim comprehensive validation testing. |
+| TC-003 Route generation | Incorrect trip output, wrong pickup geocoding, stale dates, route availability and successful route observations are recorded. | Mixed outcomes; exact route pass/fail details are not available for every application. |
+| TC-004 Pickup/drop-off | Missing pickup/drop-off functionality, wrong pickup resolution, and some correct stop/route observations are recorded. | Partial evidence; no complete per-application stop checklist survives in the workbook. |
+| TC-005 ELD log generation | Complete, incomplete, absent, and partial daily-log observations are recorded. | Results vary by application; absent logs on blocked apps are not functional ELD failures. |
+| TC-006 HOS calculations | Explicit driving-limit, break, cycle-hour, reset, and recap observations are recorded for selected applications. | Failures and successful checks can be attributed only where stated in the source notes. |
+| TC-007 Rest-break scheduling | Missing breaks on some accessible applications and working HOS sequencing/break observations on others are recorded. | Partial cross-application evidence; do not infer results for unmentioned apps. |
+| TC-008 Fuel-stop scheduling | Missing, late, insufficient, and successful/available fuel-stop observations are recorded. | Outcomes are documented only for applications with explicit notes. |
+| TC-009 PDF export | Export worked for some accessible applications and was inconsistent for another. | No evidence that PDF export was available or tested in every application. |
+| TC-010 Error handling | HTTP 429, 500, 502, DNS, CORS, authentication, and database errors were observed. | Technical failure evidence exists; systematic invalid-input and graceful-error-message testing is not fully documented. |
+
+### 6.3 Evidence limitations
+
+- The original workbook is the source for the retrospective observations and category scores.
+- It does not preserve a separate execution timestamp, browser/version, screenshot ID, or full step-by-step result for every test case.
+- The status of an individual test case is not inferred from the application's overall score.
+- Where a core workflow was blocked, downstream route, ELD, HOS, fuel, and PDF cases are treated as **Blocked / Not Executed**, not Fail.
+- Where the workbook records an observed result but no raw screenshot or export, this document labels it as an assessment observation and does not claim attached evidence.
+- A future retest should record the actual test date, environment, inputs, expected result, actual result, status, and evidence filename for every executed test.
+
+## 7. Updated Execution Record Template
+
+Use this record for future retesting or when original supporting evidence becomes available.
+
+| Field | Record |
+|---|---|
+| Application ID | |
+| Test Case ID | |
+| Test date and time | |
+| Tester | |
+| Browser / environment | |
+| Input data | |
+| Expected result | |
+| Actual result | |
+| Status (Pass / Fail / Blocked / Not Tested) | |
+| Evidence reference | |
+| Related bug ID | |
+| Retest result | |
+
+## 8. Evidence and Reporting Guidelines
 
 - Record the actual observed behaviour, not what the application was expected to do.
 - Use screenshots, exported files, or concise observation notes where available and permitted.
@@ -187,6 +260,6 @@ Use one execution record per application. Duplicate the template for Application
 - If a feature is unavailable or not present, describe what was observed and follow the assessment's scoring approach; do not invent a failure condition.
 - Keep application identifiers anonymised and exclude private links, candidate identities, credentials, and confidential assessment materials from this public case study.
 
-## 7. Conclusion
+## 9. Conclusion
 
 These functional test cases provide a repeatable structure for evaluating the Truck Trip Planner applications against the agreed assessment scenario. Once execution records are completed from verified observations, the results can be consolidated into the evaluation scorecard, defect reports, application ranking, and final QA report.
