@@ -1,120 +1,122 @@
 # Software Quality Assurance Case Study
-## Truck Trip Planner – Functional, ELD Compliance & UI/UX Evaluation
+## Truck Trip Planner — Functional Testing, ELD/HOS Evaluation & UI/UX Review
 
-### Project Overview
+A portfolio case study documenting a manual QA assessment of **20 independently developed Truck Trip Planner applications**. The project covers test planning, functional test design, ELD/HOS output review, defect observation, comparative scoring, reporting, and quality improvement recommendations.
 
-This project documents a manual Quality Assurance (QA) evaluation of 20 independently developed Truck Trip Planner applications.
+> **Assessment snapshot:** 20 applications reviewed · 5 scoring categories · 9 complete · 2 partially evaluated · 9 blocked  
+> **Highest recorded score:** 19/25 (76%) — Application 15  
+> **Assessment route:** Dallas, Texas → Houston, Texas → Los Angeles, California · **Initial cycle hours:** 20
 
-The objective was to assess application functionality, Electronic Logging Device (ELD) accuracy, user interface design, user experience, and overall software reliability against defined requirements.
+**Start here:** [Open the Test Execution Dashboard](test-results/test-execution-dashboard.md) · [Read the Final QA Report](final-report/final-qa-report.md) · [View the Application Ranking](test-results/application-ranking.md)
 
-The assessment involved hands-on application evaluation, review of functional behaviour and ELD/HOS outputs, documentation of observed quality concerns, and preparation of a standardised scoring and reporting framework. The original 20-application scores, score-based ranking, and application-level observation summaries have now been transcribed into this public portfolio.
+---
 
-### Project Objectives
+## 1. Project Overview
 
-- Evaluate application functionality against specified requirements.
-- Assess ELD logs and Hours of Service (HOS) calculations.
-- Verify route planning, stops, rest periods and fuel scheduling.
-- Evaluate interface design and user experience.
-- Identify functional defects, inconsistencies and usability issues.
-- Score and rank the 20 applications using the original assessment workbook, while clearly labelling blocked and partially evaluated submissions.
-- Provide recommendations for improving software quality.
+The objective was to assess application functionality, Electronic Logging Device (ELD) accuracy, Hours of Service (HOS) calculations, user interface design, user experience, and overall reliability against the assessment requirements.
 
-### Testing Scope
+The original assessment workbook was used to transcribe the 20 application scores, score-based ranking, and application-level observation summaries into this portfolio. The repository distinguishes observed behaviour from features that could not be verified because an application was inaccessible or its workflow was blocked.
 
-The assessment covered the following areas:
+## 2. Assessment at a Glance
 
-| Testing Area | Evaluation Focus |
+| Measure | Result |
+|---|---:|
+| Applications assessed | 20 |
+| Scoring categories | 5 |
+| Maximum score per application | 25 |
+| Complete evaluations | 9 (45%) |
+| Partially evaluated | 2 (10%) |
+| Blocked | 9 (45%) |
+| Highest score | 19/25 (76%) |
+| Mean historical score | 10/25 (40%) |
+| Median historical score | 8.5/25 (34%) |
+
+**Scoring categories:** ELD Accuracy · Other Functional Requirements · UI Aesthetics · UX Intuitiveness · Bugs & Functionality.
+
+**Scoring formula:** `(Total Score ÷ 25) × 100`.
+
+> **How to interpret the results:** The original workbook assigned a minimum score of 1 in each category, including where the core workflow was blocked. Historical scores are preserved. A blocked application's low functional/ELD score is not proof that inaccessible calculations or logs were tested and found defective. See the [scorecard](test-results/evaluation-scorecard.md) for application-level context.
+
+## 3. Standard Test Scenario
+
+| Input | Assessment value |
 |---|---|
-| Functional Testing | Required inputs, trip generation, route planning and expected outputs |
-| ELD Accuracy | Daily logs, driving hours, rest periods and cycle calculations |
-| UI Testing | Layout, visual presentation and information organisation |
-| UX Testing | Navigation, usability, accessibility and ease of interaction |
-| Defect Identification | Functional errors, inconsistencies and application failures |
+| Starting location | Dallas, Texas |
+| Intermediate stop / pickup | Houston, Texas |
+| Final destination | Los Angeles, California |
+| Initial cycle hours | 20 |
+| Daily log review | 24-hour ELD log |
+| Fuel-stop assessment interval | Every 1,000 miles |
 
-### Test Scenario
+The assessment reviewed whether each application could use the supplied trip inputs to generate an appropriate route, itinerary, stops, rest periods, and multi-day ELD logs.
 
-A standardised test scenario was used to evaluate the applications consistently.
+## 4. Testing Scope and Activities
 
-**Route:** Dallas → Houston → Los Angeles  
-**Initial Cycle Hours:** 20 hours
-
-The assessment examined whether applications could generate appropriate routes, stops, rest periods and multi-day ELD logs based on the supplied inputs.
-
-### QA Evaluation Methodology
-
-Each application was evaluated across five categories using a scoring scale of 1–5.
-
-| Score | Classification |
+| Area | What was evaluated |
 |---|---|
-| 1 | Poor / Blocked |
-| 2 | Below Average |
-| 3 | Average |
-| 4 | Good |
-| 5 | Excellent |
+| Functional testing | Required inputs, trip generation, route planning, stops, and expected outputs |
+| ELD/HOS review | Daily log completeness, driving hours, rest periods, cycle calculations, and duty sequencing |
+| UI evaluation | Layout, visual presentation, readability, and information organisation |
+| UX evaluation | Navigation, clarity, ease of interaction, and usability |
+| Defect observation | Functional inconsistencies, output problems, API/integration errors, and application availability |
 
-Each category contributed equally to the final score.
+### Key QA activities
 
-**Maximum score:** 25 points.
+- Reviewed 20 independently developed applications using a common scenario.
+- Examined trip inputs and generated route/itinerary outputs.
+- Reviewed ELD daily logs and HOS-related calculations where available.
+- Evaluated rest-break and fuel-stop scheduling.
+- Observed frontend/backend integration and access failures.
+- Recorded usability and presentation concerns.
+- Applied the original five-category scoring framework.
+- Compared submissions and prepared quality improvement recommendations.
 
-**Percentage calculation:** (Total Score ÷ 25) × 100.
+## 5. Key Assessment Findings
 
-Applications that could not be accessed or whose core functionality was blocked were to be documented accordingly. In such cases, inaccessible functionality is classified as unverified rather than assumed to be defective. The original workbook's scores and ranking are now published in the scorecard and ranking documents. Blocked applications are labelled clearly; their inaccessible functionality is not treated as a confirmed defect.
-
-### Key QA Activities
-
-- Manual functional evaluation of 20 applications.
-- Verification of trip inputs and generated outputs.
-- Review of ELD daily logs and HOS calculations.
-- Assessment of route accuracy and stop scheduling.
-- Identification of frontend and backend integration issues.
-- Documentation of usability and interface problems.
-- Comparative scoring and application ranking.
-- Preparation of quality improvement recommendations.
-
-### Key Findings
-
-The assessment identified recurring quality concerns, including:
+The source assessment notes recorded recurring concerns across selected applications:
 
 - Incomplete or inconsistent 24-hour ELD logs.
-- Incorrect driving-hour and rest-break calculations.
-- User inputs not properly reflected in generated schedules.
-- Missing or incorrectly scheduled fuel stops.
-- Route and geolocation inaccuracies.
-- Backend API and CORS integration failures.
-- Authentication and deployment accessibility issues.
-- Inconsistencies between on-screen results and exported PDF reports.
-- Poor error handling and unclear user feedback.
+- Driving-limit, rest-break, and cycle-hour calculation concerns.
+- Submitted inputs not reflected in generated schedules or recaps.
+- Missing, late, or insufficiently scheduled fuel stops.
+- Incorrect location resolution and route/checkpoint inaccuracies.
+- Backend API, DNS, CORS, and database connectivity failures.
+- Authentication and deployment accessibility blockers.
+- Differences between on-screen results and exported PDF reports.
+- Incomplete log fields, unclear labels, and usability issues.
 
-### Deliverables
+These are cross-submission themes, not claims that every application exhibited every issue. The [bug report register](bug-reports/bug-reports.md) separates functional observations from access/integration blockers and records evidence limitations.
 
-The project documentation is organised into:
+## 6. Project Documentation
 
-- Test plan and testing scope.
-- Functional test cases.
-- Defect and observation reports.
-- QA evaluation scorecard.
-- Comparative assessment results.
-- Quality improvement recommendations.
+Use this guide to explore the work in assessment order.
 
-### Documentation Guide
+| Stage | Document | What it contains |
+|---|---|---|
+| 01 — Plan | [QA Test Plan](test-plan/test-plan.md) | Objectives, scope, scenario, approach, criteria, and limitations. |
+| 02 — Design | [Functional Test Cases](test-cases/functional-test-cases.md) | Ten functional test cases, expected results, and retrospective execution observations. |
+| 03 — Record | [Bug Reports & Observations](bug-reports/bug-reports.md) | Application-level observations, severity, retest paths, and access blockers. |
+| 04 — Monitor | [Test Execution Dashboard](test-results/test-execution-dashboard.md) | Assessment snapshot, status distribution, key findings, and test coverage summary. |
+| 05 — Score | [Evaluation Scorecard](test-results/evaluation-scorecard.md) | Five-category rubric, 20 application scores, and individual notes. |
+| 06 — Compare | [Application Ranking](test-results/application-ranking.md) | Score-based ranking, ties, summary statistics, and interpretation limits. |
+| 07 — Report | [Final QA Report](final-report/final-qa-report.md) | Consolidated approach, quantitative results, findings, limitations, and conclusions. |
+| 08 — Improve | [Quality Improvement Recommendations](recommendations/quality-improvement.md) | Engineering improvement areas, priorities, and suggested QA practices. |
 
-| Document | Purpose |
-|---|---|
-| [QA Test Plan](test-plan/test-plan.md) | Defines the assessment scope, scenario, approach, and evaluation criteria. |
-| [Functional Test Cases](test-cases/functional-test-cases.md) | Provides repeatable test steps and expected results for the core workflows. |
-| [Bug Reports](bug-reports/bug-reports.md) | Provides the defect-reporting template and observation register. |
-| [Test Execution Dashboard](test-results/test-execution-dashboard.md) | Summarises evaluation status, top scores, key findings, and test coverage. |
-| [Evaluation Scorecard](test-results/evaluation-scorecard.md) | Defines the five-category rubric and contains the 20 recorded scores and application observations. |
-| [Application Ranking](test-results/application-ranking.md) | Presents the original score-based ranking, ties, summary statistics, and limitations. |
-| [Final QA Report](final-report/final-qa-report.md) | Consolidates the assessment approach, quantitative results, findings, and limitations. |
-| [Quality Improvement Recommendations](recommendations/quality-improvement.md) | Outlines engineering improvements linked to the assessment themes. |
+## 7. Skills Demonstrated
 
-**Portfolio status:** The original score sheet and ranking are published. Detailed test-case pass/fail execution records and individual defect tickets remain limited to evidence that can be traced to the assessment notes.
+Manual software testing · Functional test design · ELD/HOS output review · UI/UX evaluation · Defect documentation · Severity assessment · Test reporting · Comparative analysis · Quality improvement recommendations.
 
-### Skills Demonstrated
+## 8. Limitations and Integrity
 
-Manual Software Testing | Functional Testing | UI/UX Testing | Defect Identification | Test Documentation | Quality Evaluation | Analytical Thinking | Technical Reporting
+- This was a manual assessment, not a source-code audit, security assessment, or formal regulatory certification.
+- Nine submissions were blocked from meaningful core-workflow evaluation; two were only partially evaluated.
+- The original workbook preserves assessment observations and scores but not a full Pass/Fail matrix for every test case across all 20 applications.
+- Some observations do not include original screenshots, exact timestamps, or network traces. They are labelled as source-workbook observations and are not described as independently reproduced.
+- Blocked or unverified functionality is not treated as a confirmed functional defect.
+- Application identifiers are anonymised. Candidate names, private submission links, and confidential assessment materials are excluded.
 
-### Important Note
+**Portfolio status:** The original score sheet and ranking, retrospective application observations, test documentation, and final report are published. Detailed test-case execution records and individual defect tickets remain limited to the evidence available in the original assessment notes.
 
-This is an anonymised portfolio case study based on a completed software evaluation exercise. Candidate identities, private submission links and confidential assessment materials are excluded.
+---
+
+*This repository is an anonymised portfolio case study documenting a manual software quality evaluation exercise.*
