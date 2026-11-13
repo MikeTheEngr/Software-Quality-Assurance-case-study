@@ -5,7 +5,7 @@
 
 This guide organises genuine visual evidence for the three highest-ranked applications in the assessment. The original workbook records Application 15 at 19/25 (76%), and Applications 02 and 16 tied at 17/25 (68%). These are historical assessment scores, not new test results.
 
-**Current evidence status:** No screenshots have been added to this directory. Every item below is a planned capture, not evidence already collected.
+**Current evidence status:** Two genuine screenshots for Application 16 have been supplied in this conversation and reviewed. They are captured source evidence but have not yet been committed as image files to this repository. All other listed items remain planned captures.
 
 ### 2. Capture integrity
 
@@ -48,13 +48,13 @@ The assessment notes recorded a correct route, complete 24-hour logs, and verifi
 | Evidence ID | Suggested filename | Capture target |
 |---|---|---|
 | APP16-01 | APP16-01-route-distance.png | Generated route and displayed distance |
-| APP16-02 | APP16-02-eld-log-dates.png | ELD daily-log date headers |
-| APP16-03 | APP16-03-hos-break-reset.png | HOS timeline with driving, break, and reset periods |
+| APP16-02 | APP16-02-eld-log-dates.png | ELD daily-log date headers — screenshot received (conversation attachment; repository upload pending) |
+| APP16-03 | APP16-03-hos-break-reset.png | HOS timeline with driving, break, and reset periods — screenshot received (conversation attachment; repository upload pending) |
 | APP16-04 | APP16-04-fuel-stop-schedule.png | Fuel-stop schedule for the long route |
 
 ### 4. Evidence register
 
-Update this register only after capturing and reviewing the actual image.
+Update this register only after capturing and reviewing the actual image. Screenshots received in chat are marked as captured, but remain pending binary upload to the repository.
 
 | Evidence ID | Application | Status | Repository path | Capture date | Browser / viewport | Notes |
 |---|---|---|---|---|---|---|
@@ -68,8 +68,8 @@ Update this register only after capturing and reviewing the actual image.
 | APP02-03 | Application 02 | Pending capture | — | — | — | |
 | APP02-04 | Application 02 | Pending capture | — | — | — | |
 | APP16-01 | Application 16 | Pending capture | — | — | — | |
-| APP16-02 | Application 16 | Pending capture | — | — | — | |
-| APP16-03 | Application 16 | Pending capture | — | — | — | |
+| APP16-02 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-13 (received) | Not supplied | Day 1 log dated 2025-06-01; 605 miles; displayed duty totals sum to 24.0h. |
+| APP16-03 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-13 (received) | Not supplied | Day 3 log dated 2025-06-03; 576.3 miles; displayed duty totals sum to 24.0h. | |
 | APP16-04 | Application 16 | Pending capture | — | — | — | |
 
 ### 5. Adding screenshots
