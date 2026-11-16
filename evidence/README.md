@@ -43,7 +43,7 @@ The assessment notes recorded broad functional coverage, including stop timings,
 
 #### Application 16 — 17/25 (tied 2nd)
 
-The assessment notes recorded a correct route, complete 24-hour logs, and verified driving limits, breaks, resets, and cycle calculations. Concerns included generated dates in June 2025 rather than the November 2026 assessment period and no fuel stop on an approximately 1,786-mile trip despite the 1,000-mile interval.
+The assessment notes recorded a correct route, complete 24-hour logs, and verified driving limits, breaks, resets, and cycle calculations. Earlier screenshots supplied in this conversation showed June 2025 log dates and the historical notes recorded a concern about fuel-stop coverage. Newer screenshots show a Vinton, TX fuel-stop popup and a Nov 12, 2026 log preview. These observations may reflect different generated runs; do not combine them into one execution record until the run/configuration is confirmed.
 
 | Evidence ID | Suggested filename | Capture target |
 |---|---|---|
@@ -51,7 +51,7 @@ The assessment notes recorded a correct route, complete 24-hour logs, and verifi
 | APP16-01 | APP16-01-route-distance.png | Generated route and displayed distance — screenshot received (conversation attachment; repository upload pending) |
 | APP16-02 | APP16-02-eld-log-dates.png | ELD daily-log date headers — screenshot received (conversation attachment; repository upload pending) |
 | APP16-03 | APP16-03-hos-break-reset.png | HOS timeline with driving, break, and reset periods — screenshot received (conversation attachment; repository upload pending) |
-| APP16-04 | APP16-04-fuel-stop-schedule.png | Fuel-stop schedule for the long route |
+| APP16-04 | APP16-04-fuel-stop-schedule.png | Fuel-stop marker popup received: Vinton, TX; Nov 13, 4:00 PM; 741 miles remaining; return at 4:30 PM. Screenshot received (conversation attachment; repository upload pending). |\n| APP16-05 | APP16-05-eld-log-pdf-preview.png | Day 1 log-sheet preview received: Nov 12, 2026; 605 miles; PDF download control visible. Screenshot received (conversation attachment; repository upload pending). |
 
 ### 4. Evidence register
 
@@ -72,7 +72,7 @@ Update this register only after capturing and reviewing the actual image. Screen
 | APP16-00 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-15 (received) | Not supplied | Input form shows Dallas, TX; Houston, TX pickup; Los Angeles, CA drop-off; current cycle used = 20 hours. |
 | APP16-02 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-13 (received) | Not supplied | Day 1 log dated 2025-06-01; 605 miles; displayed duty totals sum to 24.0h. |
 | APP16-03 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-13 (received) | Not supplied | Day 3 log dated 2025-06-03; 576.3 miles; displayed duty totals sum to 24.0h. | |
-| APP16-04 | Application 16 | Pending capture | — | — | — | |
+| APP16-04 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-16 (received) | Not supplied | Map popup identifies a fuel stop in Vinton, TX at Fri Nov 13, 4:00 PM; 741 miles remaining; return at 4:30 PM. This is evidence of a scheduled fuel stop, so the earlier historical 'no fuel stop' concern needs reassessment against this run and its mileage/interval. |\n| APP16-05 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-16 (received) | Not supplied | Day 1 log preview dated Nov 12, 2026; 605 miles; displayed totals: 8.5h off duty, 3h sleeper, 11h driving, 1.5h on duty (24h total). A Download PDF control is visible; actual downloaded PDF not yet independently inspected. | |
 
 ### 5. Adding screenshots
 
@@ -93,7 +93,7 @@ evidence/
     └── APP16-01-route-distance.png
 ```
 
-The filenames are examples of the naming convention only; they do not mean the screenshots have been captured. Conversation-supplied screenshots are tracked as captured above, but remain pending binary upload to the repository.
+The filenames are examples of the naming convention only; they do not mean the screenshots have been captured. Conversation-supplied screenshots are tracked as captured above, but remain pending binary upload to the repository. Conversation-supplied screenshots are tracked as captured above, but remain pending binary upload to the repository.
 
 ### 6. Traceability
 
