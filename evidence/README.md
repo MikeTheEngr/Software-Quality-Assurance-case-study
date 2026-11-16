@@ -5,7 +5,7 @@
 
 This guide organises genuine visual evidence for the three highest-ranked applications in the assessment. The original workbook records Application 15 at 19/25 (76%), and Applications 02 and 16 tied at 17/25 (68%). These are historical assessment scores, not new test results.
 
-**Current evidence status:** Two genuine screenshots for Application 16 have been supplied in this conversation and reviewed. They are captured source evidence but have not yet been committed as image files to this repository. All other listed items remain planned captures.
+**Current evidence status:** Four genuine screenshots for Application 16 have been supplied in this conversation and reviewed. They are captured source evidence but have not yet been committed as image files to this repository. The latest two show the trip inputs and generated route summary. Other listed items remain planned captures.
 
 ### 2. Capture integrity
 
@@ -47,7 +47,7 @@ The assessment notes recorded a correct route, complete 24-hour logs, and verifi
 
 | Evidence ID | Suggested filename | Capture target |
 |---|---|---|
-| APP16-01 | APP16-01-route-distance.png | Generated route and displayed distance |
+| APP16-00 | APP16-00-trip-inputs.png | Trip input form showing Dallas, Houston, Los Angeles, and 20 prior cycle hours — screenshot received (conversation attachment; repository upload pending) |\n| APP16-01 | APP16-01-route-distance.png | Generated route and displayed distance — screenshot received (conversation attachment; repository upload pending) |
 | APP16-02 | APP16-02-eld-log-dates.png | ELD daily-log date headers — screenshot received (conversation attachment; repository upload pending) |
 | APP16-03 | APP16-03-hos-break-reset.png | HOS timeline with driving, break, and reset periods — screenshot received (conversation attachment; repository upload pending) |
 | APP16-04 | APP16-04-fuel-stop-schedule.png | Fuel-stop schedule for the long route |
@@ -67,8 +67,8 @@ Update this register only after capturing and reviewing the actual image. Screen
 | APP02-02 | Application 02 | Pending capture | — | — | — | |
 | APP02-03 | Application 02 | Pending capture | — | — | — | |
 | APP02-04 | Application 02 | Pending capture | — | — | — | |
-| APP16-01 | Application 16 | Pending capture | — | — | — | |
-| APP16-02 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-13 (received) | Not supplied | Day 1 log dated 2025-06-01; 605 miles; displayed duty totals sum to 24.0h. |
+| APP16-01 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-15 (received) | Not supplied | Dashboard shows 1,786.3 miles, 30.62h drive time, 56.48h total trip time, 3 log days, and 13.52h cycle remaining; map shows Dallas → Houston → Los Angeles. Visible timeline begins with 0.25h pre-trip inspection, 4.33h / 238-mile drive to Houston, then 1h pickup. |
+| APP16-00 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-15 (received) | Not supplied | Input form shows Dallas, TX; Houston, TX pickup; Los Angeles, CA drop-off; current cycle used = 20 hours. |\n| APP16-02 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-13 (received) | Not supplied | Day 1 log dated 2025-06-01; 605 miles; displayed duty totals sum to 24.0h. |
 | APP16-03 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-13 (received) | Not supplied | Day 3 log dated 2025-06-03; 576.3 miles; displayed duty totals sum to 24.0h. | |
 | APP16-04 | Application 16 | Pending capture | — | — | — | |
 
@@ -91,7 +91,7 @@ evidence/
     └── APP16-01-route-distance.png
 ```
 
-The filenames are examples of the naming convention only; they do not mean the screenshots have been captured.
+The filenames are examples of the naming convention only; they do not mean the screenshots have been captured. Conversation-supplied screenshots are tracked as captured above, but remain pending binary upload to the repository.
 
 ### 6. Traceability
 
