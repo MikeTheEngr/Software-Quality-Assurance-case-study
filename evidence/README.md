@@ -1,105 +1,48 @@
-# Evidence Capture Guide
-## Truck Trip Planner — Top Three Application Reviews
+# Evidence Review
+## Truck Trip Planner — Application 16 (Spotter AI)
 
-### 1. Purpose and evidence status
+### Purpose
 
-This guide organises genuine visual evidence for the three highest-ranked applications in the assessment. The original workbook records Application 15 at 19/25 (76%), and Applications 02 and 16 tied at 17/25 (68%). These are historical assessment scores, not new test results.
+This page records the visual evidence supplied for Application 16 during the assessment portfolio review. Application 16 received **17/25 (68%)**, tied for second place in the original assessment.
 
-**Current evidence status:** Four genuine screenshots for Application 16 have been supplied in this conversation and reviewed. They are captured source evidence but have not yet been committed as image files to this repository. The latest two show the trip inputs and generated route summary. Other listed items remain planned captures.
+The user has confirmed that Spotter AI is Application 16 and that the screenshots already supplied are sufficient. **No further screenshot collection is planned.**
 
-### 2. Capture integrity
+### Evidence received
 
-- Capture the actual application interface or output. Do not create mockups or reconstruct screens.
-- Redact personal names, email addresses, credentials, tokens, private URLs, and confidential assessment information before publishing.
-- Preserve enough screen context to identify the feature and understand the observation.
-- Record the capture date, browser, viewport, and evidence ID.
-- A screenshot proves only what is visible in that capture; it does not independently prove hidden calculations, backend behaviour, or regulatory compliance.
-- If an application is no longer accessible, mark the capture **Unavailable** and explain why. Never substitute an unrelated image.
+The six screenshots below were supplied in this conversation and visually reviewed. They are recorded here as received evidence; the original image files have **not** been committed to this repository. No browser or viewport metadata was supplied.
 
-### 3. Capture plan
-
-#### Application 15 — 19/25 (76%)
-
-The assessment notes recorded complete 24-hour logs, a cycle recap reconciling with the entered 20 prior hours and planned duty, HOS sequencing, multi-day planning, and working PDF export. Follow-up concerns included a fuel stop approximately 45 miles late, an ETA discrepancy of about 30 minutes, and a final off-duty period that was not clearly shown.
-
-| Evidence ID | Suggested filename | Capture target |
+| Evidence ID | Screenshot content | Directly visible information |
 |---|---|---|
-| APP15-01 | APP15-01-trip-inputs-route.png | Trip inputs and Dallas → Houston → Los Angeles route |
-| APP15-02 | APP15-02-eld-daily-log.png | Representative 24-hour ELD daily log |
-| APP15-03 | APP15-03-cycle-hos-recap.png | Cycle-hours recap and HOS schedule |
-| APP15-04 | APP15-04-fuel-stop-eta.png | Fuel-stop placement and ETA details |
-| APP15-05 | APP15-05-pdf-export.png | Exported PDF and readable report content |
+| APP16-00 | Trip input form | Current location Dallas, TX; pickup Houston, TX; drop-off Los Angeles, CA; current cycle used 20 hours. |
+| APP16-01 | Generated trip dashboard and route map | Route map shows Dallas → Houston → Los Angeles. Dashboard shows 1,786.3 miles, 30.62 hours drive time, 56.48 hours total trip time, 3 log-sheet days, and 13.52 hours cycle remaining. The visible stop timeline begins with a 0.25-hour pre-trip inspection, a 4.33-hour / 238-mile drive to Houston, and a 1-hour pickup. |
+| APP16-02 | Earlier Day 1 ELD log | Date 2025-06-01; 605 miles; Off Duty 6h; Sleeper Berth 5.25h; Driving 11h; On Duty (ND) 1.75h; displayed total 24h. |
+| APP16-03 | Earlier Day 3 ELD log | Date 2025-06-03; 576.3 miles; Off Duty 9.52h; Sleeper Berth 2.25h; Driving 10.48h; On Duty (ND) 1.75h; displayed total 24h. |
+| APP16-04 | Fuel-stop map popup | Fuel stop in Vinton, TX; Fri Nov 13 at 4:00 PM; 741 miles remaining; return at 4:30 PM. |
+| APP16-05 | ELD daily log preview | Day 1 dated November 12, 2026; 605 miles; Off Duty 8:30; Sleeper Berth 3:00; Driving 11:00; On Duty (Not Driving) 1:30; displayed total 24 hours. A Download PDF control is visible. |
 
-#### Application 02 — 17/25 (tied 2nd)
+### Evidence-based observations
 
-The assessment notes recorded broad functional coverage, including stop timings, breaks, fuel, pickup/drop-off, row totals, and daily miles. Presentation concerns included blank hours/remarks/header fields, unnamed stops, truncated text, and nested scrolling.
+1. **Trip inputs and route:** The supplied input screen shows the intended Dallas → Houston → Los Angeles locations and 20 hours of cycle usage. The generated map displays the same route.
+2. **Daily log totals:** The visible duty-status totals in APP16-02, APP16-03, and APP16-05 each add up to 24 hours.
+3. **Driving time:** APP16-02 and APP16-05 each display 11 hours of driving; APP16-03 displays 10.48 hours.
+4. **Fuel stop:** APP16-04 visibly shows a scheduled fuel stop in Vinton, Texas. This means the earlier assessment concern that no fuel stop appeared must not be repeated as a universal finding without confirming the exact run and configuration.
+5. **Date inconsistency across supplied evidence:** APP16-02 and APP16-03 show June 2025 dates, while APP16-05 shows November 12, 2026. Treat these as separate observed outputs unless the same run/configuration can be established. Do not merge them into one execution record.
+6. **PDF export:** APP16-05 shows the Download PDF control, but the screenshot alone does not establish that the PDF downloaded successfully or that the exported file is complete and readable.
+7. **Cycle calculation:** The dashboard displays 13.52 hours remaining after 20 hours of cycle usage, but the screenshots do not provide enough calculation detail to independently validate the displayed result.
 
-| Evidence ID | Suggested filename | Capture target |
-|---|---|---|
-| APP02-01 | APP02-01-trip-inputs-route.png | Trip inputs and generated route |
-| APP02-02 | APP02-02-stops-breaks-fuel.png | Stop, break, and fuel schedule |
-| APP02-03 | APP02-03-eld-log-fields.png | ELD log fields, including hours and remarks |
-| APP02-04 | APP02-04-log-layout-scroll.png | Log layout, labels, truncation, and scrolling |
+### Limitations and execution status
 
-#### Application 16 — 17/25 (tied 2nd)
+- These are observations from screenshots, not a fresh independent execution of every functional test case.
+- No test case should be marked Passed or Failed solely because a screenshot exists.
+- The screenshot of a PDF control is not proof of a successful PDF export.
+- The fuel-stop popup confirms a displayed stop in that view; it does not by itself prove the stop interval is correct for the full trip.
+- The differing log dates must remain separately documented until their run context is known.
+- Original screenshot files remain in the conversation and have not been uploaded as binary assets to this repository.
 
-The assessment notes recorded a correct route, complete 24-hour logs, and verified driving limits, breaks, resets, and cycle calculations. Earlier screenshots supplied in this conversation showed June 2025 log dates and the historical notes recorded a concern about fuel-stop coverage. Newer screenshots show a Vinton, TX fuel-stop popup and a Nov 12, 2026 log preview. These observations may reflect different generated runs; do not combine them into one execution record until the run/configuration is confirmed.
+### Traceability
 
-| Evidence ID | Suggested filename | Capture target |
-|---|---|---|
-| APP16-00 | APP16-00-trip-inputs.png | Trip input form showing Dallas, Houston, Los Angeles, and 20 prior cycle hours — screenshot received (conversation attachment; repository upload pending) |
-| APP16-01 | APP16-01-route-distance.png | Generated route and displayed distance — screenshot received (conversation attachment; repository upload pending) |
-| APP16-02 | APP16-02-eld-log-dates.png | ELD daily-log date headers — screenshot received (conversation attachment; repository upload pending) |
-| APP16-03 | APP16-03-hos-break-reset.png | HOS timeline with driving, break, and reset periods — screenshot received (conversation attachment; repository upload pending) |
-| APP16-04 | APP16-04-fuel-stop-schedule.png | Fuel-stop marker popup received: Vinton, TX; Nov 13, 4:00 PM; 741 miles remaining; return at 4:30 PM. Screenshot received (conversation attachment; repository upload pending). |\n| APP16-05 | APP16-05-eld-log-pdf-preview.png | Day 1 log-sheet preview received: Nov 12, 2026; 605 miles; PDF download control visible. Screenshot received (conversation attachment; repository upload pending). |
+- [Functional Test Cases](../test-cases/functional-test-cases.md) — designed tests and execution placeholders.
+- [Evaluation Scorecard](../test-results/evaluation-scorecard.md) — original comparative assessment scores and observations.
+- [Application Ranking](../test-results/application-ranking.md) — ranking of the assessed applications.
 
-### 4. Evidence register
-
-Update this register only after capturing and reviewing the actual image. Screenshots received in chat are marked as captured, but remain pending binary upload to the repository.
-
-| Evidence ID | Application | Status | Repository path | Capture date | Browser / viewport | Notes |
-|---|---|---|---|---|---|---|
-| APP15-01 | Application 15 | Pending capture | — | — | — | |
-| APP15-02 | Application 15 | Pending capture | — | — | — | |
-| APP15-03 | Application 15 | Pending capture | — | — | — | |
-| APP15-04 | Application 15 | Pending capture | — | — | — | |
-| APP15-05 | Application 15 | Pending capture | — | — | — | |
-| APP02-01 | Application 02 | Pending capture | — | — | — | |
-| APP02-02 | Application 02 | Pending capture | — | — | — | |
-| APP02-03 | Application 02 | Pending capture | — | — | — | |
-| APP02-04 | Application 02 | Pending capture | — | — | — | |
-| APP16-01 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-15 (received) | Not supplied | Dashboard shows 1,786.3 miles, 30.62h drive time, 56.48h total trip time, 3 log days, and 13.52h cycle remaining; map shows Dallas → Houston → Los Angeles. Visible timeline begins with 0.25h pre-trip inspection, 4.33h / 238-mile drive to Houston, then 1h pickup. |
-| APP16-00 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-15 (received) | Not supplied | Input form shows Dallas, TX; Houston, TX pickup; Los Angeles, CA drop-off; current cycle used = 20 hours. |
-| APP16-02 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-13 (received) | Not supplied | Day 1 log dated 2025-06-01; 605 miles; displayed duty totals sum to 24.0h. |
-| APP16-03 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-13 (received) | Not supplied | Day 3 log dated 2025-06-03; 576.3 miles; displayed duty totals sum to 24.0h. | |
-| APP16-04 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-16 (received) | Not supplied | Map popup identifies a fuel stop in Vinton, TX at Fri Nov 13, 4:00 PM; 741 miles remaining; return at 4:30 PM. This is evidence of a scheduled fuel stop, so the earlier historical 'no fuel stop' concern needs reassessment against this run and its mileage/interval. |\n| APP16-05 | Application 16 | Captured — upload pending | Conversation attachment; repo path pending | 2026-11-16 (received) | Not supplied | Day 1 log preview dated Nov 12, 2026; 605 miles; displayed totals: 8.5h off duty, 3h sleeper, 11h driving, 1.5h on duty (24h total). A Download PDF control is visible; actual downloaded PDF not yet independently inspected. | |
-
-### 5. Adding screenshots
-
-1. Review each image for sensitive or confidential information.
-2. Save the redacted publication copy using the matching filename above.
-3. Add it under `evidence/screenshots/`.
-4. Update the evidence register with its exact path and capture metadata.
-5. Link the evidence ID from the relevant test case or bug observation where it supports a finding.
-
-Suggested structure:
-
-```text
-evidence/
-├── README.md
-└── screenshots/
-    ├── APP15-01-trip-inputs-route.png
-    ├── APP02-01-trip-inputs-route.png
-    └── APP16-01-route-distance.png
-```
-
-The filenames are examples of the naming convention only; they do not mean the screenshots have been captured. Conversation-supplied screenshots are tracked as captured above, but remain pending binary upload to the repository. Conversation-supplied screenshots are tracked as captured above, but remain pending binary upload to the repository.
-
-### 6. Traceability
-
-- [Evaluation Scorecard](../test-results/evaluation-scorecard.md) — original scores and application observations.
-- [Application Ranking](../test-results/application-ranking.md) — score-based ranking and top-three comparison.
-- [Functional Test Cases](../test-cases/functional-test-cases.md) — test definitions and execution records.
-- [Bug Reports](../bug-reports/bug-reports.md) — recorded observations, severity, and retest paths.
-
-This is an evidence capture plan. It does not claim that new screenshots or independent retests have been completed.
+This review records only what is visible in the six supplied screenshots. It does not claim that additional tests, PDF downloads, or independent retests have been completed.
